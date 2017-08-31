@@ -1,12 +1,10 @@
 package com.jeramtough.action.aspect;
 
 import com.jeramtough.action.business.record.RecordLoginBusiness;
-import com.jeramtough.bean.LoginInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.bean.user.PrimaryUser;
 import com.jeramtough.util.JoinPointUtil;
 import com.jeramtough.util.ServletUtil;
-import com.jtlog.user.command.P;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Aspect;

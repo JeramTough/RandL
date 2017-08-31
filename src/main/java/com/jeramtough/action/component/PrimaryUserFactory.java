@@ -1,8 +1,7 @@
 package com.jeramtough.action.component;
 
-import com.jeramtough.Application;
 import com.jeramtough.action.component.qqs.QQAccessToken;
-import com.jeramtough.bean.RegisterInfo;
+import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.user.PrimaryUser;
 
 /**

@@ -1,4 +1,4 @@
-package com.jeramtough.bean;
+package com.jeramtough.bean.requestbody;
 
 /**
  * Created by Administrator

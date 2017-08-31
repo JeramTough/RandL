@@ -1,6 +1,6 @@
 package com.jeramtough.bean.user;
 
-import com.jeramtough.bean.RegisterInfo;
+import com.jeramtough.bean.requestbody.RegisterInfo;
 import org.springframework.stereotype.Component;
 
 /**

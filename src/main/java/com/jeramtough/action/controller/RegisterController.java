@@ -7,7 +7,7 @@ import com.jeramtough.action.business.register.PhoneUserRegisterBusiness;
 import com.jeramtough.action.business.register.PrimaryUserRegisterBusiness;
 import com.jeramtough.action.business.register.QQUserRegisterBusiness;
 import com.jeramtough.action.component.qqs.QQAccessToken;
-import com.jeramtough.bean.RegisterInfo;
+import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.bean.user.PrimaryUser;

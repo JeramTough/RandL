@@ -1,13 +1,10 @@
 package com.jeramtough.action.controller;
 
-import com.jeramtough.Application;
 import com.jeramtough.action.business.login.LoginBusiness;
-import com.jeramtough.bean.LoginInfo;
+import com.jeramtough.bean.requestbody.LoginInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
-import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.bean.user.PrimaryUser;
-import com.jtlog.user.command.P;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.WebApplicationContext;

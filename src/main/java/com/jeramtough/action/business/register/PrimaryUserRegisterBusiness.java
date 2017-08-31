@@ -1,6 +1,6 @@
 package com.jeramtough.action.business.register;
 
-import com.jeramtough.bean.RegisterInfo;
+import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.bean.user.PrimaryUser;
 

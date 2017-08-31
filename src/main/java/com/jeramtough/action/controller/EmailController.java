@@ -43,6 +43,8 @@ public class EmailController
 			HttpSession session = request.getSession();
 			session.setAttribute(Application.Constants.EMAIL_VERIFICATION_CODE_KEY,
 					verificationCode);
+			session.setAttribute(Application.Constants.EMAIL_VERIFICATION_FOR_ADDRESS_KEY,
+					toEmail);
 			session.setMaxInactiveInterval(5*60);
 		}
 		

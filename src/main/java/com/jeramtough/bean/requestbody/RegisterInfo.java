@@ -1,4 +1,4 @@
-package com.jeramtough.bean;
+package com.jeramtough.bean.requestbody;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.Email;
@@ -12,28 +12,6 @@ import javax.validation.constraints.NotNull;
  */
 public class RegisterInfo
 {
-/*	用户id user_id
-	电话号码 phone_number,
-	电子邮箱 email
-	性别 gender
-	年龄 age
-	职业 career
-	生日 birthday
-	昵称 nickname
-	用户名 username，
-	电话号码 phone_number,
-	电子邮箱 email
-	登录密码 login_password
-	头像url  surface imaged url
-	用户是否在线 is online
-	qq号 qq number
-	注册ip register_ip
-	注册地点 register_adddress
-	ADD FOREIGN KEY (`user_id`) REFERENCES `primary_user_info_tb` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
-	注册时间 register_time
-	登录ip logined_id
-	登录地点 logined_address
-	最后一次登录时间last_logined_time*/
 	private String username;
 	
 	private String password;

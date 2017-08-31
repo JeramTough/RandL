@@ -42,6 +42,9 @@ public interface SelectPrimaryUserMapper
 			" WHERE (username=#{uep} AND password=#{password}) " +
 			"OR (email=#{uep} AND password=#{password}) " +
 			"OR (phone_number=#{uep} AND password=#{password});")
-	PrimaryUser getPrimaryUser(@Param("uep")String uep,@Param("password")String password);
+	PrimaryUser getPrimaryUser(@Param("uep") String uep, @Param("password") String password);
 	
+	@Select("SELECT COUNT(*) FROM " + DatabaseProperty.TABLE_NAME_2 + " WHERE " +
+			"user_id=#{userId}")
+	int getUserCountByUserId(String userId);
 }
