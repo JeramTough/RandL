@@ -1,5 +1,6 @@
 package com.jeramtough.action.controller;
 
+import com.jeramtough.Application;
 import com.jeramtough.action.business.UserPropertiesBusiness;
 import com.jeramtough.bean.requestbody.PropertiesInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
@@ -25,17 +26,23 @@ public class PropertyController
 	
 	@RequestMapping(value = "randl/user/properties", method = RequestMethod.POST)
 	@ResponseBody
-	public ResponseInfo changeUserProperties(@RequestBody RequestInfo<PropertiesInfo>
-			requestInfo)
+	public ResponseInfo changeUserProperties(
+			@RequestBody RequestInfo<PropertiesInfo> requestInfo,
+			@SessionAttribute(value = Application.Constants.SMS_VERIFICATION_CODE_KEY, required = false) String rightSmsVerificationCode,
+			@SessionAttribute(value = Application.Constants.EMAIL_VERIFICATION_CODE_KEY, required = false) String rightEmailVerificationCode,
+			@SessionAttribute(value = Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY, required = false) String verifiedPhoneNumber,
+			@SessionAttribute(value = Application.Constants.EMAIL_VERIFICATION_FOR_ADDRESS_KEY, required = false) String verifiedEmailAddress)
 	{
 		//businesses
-		UserPropertiesBusiness userPropertiesBusiness=
+		UserPropertiesBusiness userPropertiesBusiness =
 				(UserPropertiesBusiness) applicationContext.getBean("userPropertiesService");
 		
 		ResponseInfo responseInfo;
-		responseInfo=userPropertiesBusiness.checkModifiedProperties(requestInfo.getMessage());
+		responseInfo = userPropertiesBusiness
+				.checkModifiedProperties(requestInfo.getMessage(), rightSmsVerificationCode,
+						rightEmailVerificationCode, verifiedPhoneNumber, verifiedEmailAddress);
 		
-		if(responseInfo.getStatusCode()==666)
+		if (responseInfo.getStatusCode() == 666)
 		{
 			userPropertiesBusiness.modifyProperties(requestInfo.getMessage());
 		}

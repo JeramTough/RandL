@@ -9,7 +9,8 @@ import com.jeramtough.bean.responsebody.ResponseInfo;
  */
 public interface UserPropertiesBusiness
 {
-	public ResponseInfo checkModifiedProperties(PropertiesInfo propertiesInfo);
+	public ResponseInfo checkModifiedProperties(PropertiesInfo propertiesInfo,String rightSmsVerificationCode, String rightEmailVerificationCode,
+			String verifiedPhoneNumber, String verifiedEmailAddress);
 	
 	public void modifyProperties(PropertiesInfo propertiesInfo);
 }

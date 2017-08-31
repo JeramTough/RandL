@@ -47,4 +47,12 @@ public interface SelectPrimaryUserMapper
 	@Select("SELECT COUNT(*) FROM " + DatabaseProperty.TABLE_NAME_2 + " WHERE " +
 			"user_id=#{userId}")
 	int getUserCountByUserId(String userId);
+	
+	@Select("SELECT phone_number FROM " + DatabaseProperty.TABLE_NAME_2 +
+			" WHERE user_id = #{userId}")
+	String getPhoneNumberByUserId(String userId);
+	
+	@Select("SELECT email FROM " + DatabaseProperty.TABLE_NAME_2 +
+			" WHERE user_id = #{userId}")
+	String getEmailAddressByUserId(String userId);
 }

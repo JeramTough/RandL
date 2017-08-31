@@ -5,7 +5,6 @@ com\jeramtough\dao\mapper\EmailConfigurationMapper.class
 com\jeramtough\action\controller\GetSurfaceImageController.class
 com\jeramtough\util\WordUtil.class
 com\jeramtough\action\controller\EmailController.class
-com\jeramtough\action\component\inspector\PrimaryUserRegisterInfoInspector.class
 com\jeramtough\bean\responsebody\ResponseInfo.class
 com\jeramtough\bean\EmailConfiguration.class
 com\jeramtough\action\controller\SMSController.class
@@ -28,7 +27,6 @@ com\jeramtough\action\service\SMSService.class
 com\jeramtough\dao\mapper\ConfigurationMapper.class
 com\jeramtough\dao\mapper\QQConfigurationMapper.class
 com\jeramtough\action\service\record\RecordRegisterService.class
-com\jeramtough\action\component\inspector\RegisterInfoInspector.class
 com\jeramtough\util\ServletUtil.class
 com\jeramtough\action\component\qqs\QQAccessToken$1.class
 com\jeramtough\action\service\UserPropertiesService.class
@@ -37,11 +35,14 @@ com\jeramtough\action\controller\CaptchaController.class
 com\jeramtough\action\service\QQService.class
 com\jeramtough\action\business\QQBusiness.class
 com\jeramtough\action\controller\MyController.class
+com\jeramtough\action\component\inspector\UserPropertiesInfoInspectorImpl.class
 com\jeramtough\dao\mapper\InsertPrimaryUserMapper.class
 com\jeramtough\action\component\PrimaryUserFactory.class
 com\jeramtough\action\controller\LoginController.class
+com\jeramtough\action\component\inspector\UserRegisterInfoInspector.class
 com\jeramtough\action\component\qqs\QQAccessToken.class
 com\jeramtough\util\OkHttpUtil.class
+com\jeramtough\action\component\inspector\UserInfoInspector.class
 com\jeramtough\dao\mapper\UserActivityMapper.class
 com\jeramtough\action\service\register\RegisterService.class
 com\jeramtough\dao\mapper\AliConfigurationMapper.class
@@ -69,6 +70,7 @@ com\jeramtough\action\business\register\QQUserRegisterBusiness.class
 com\jeramtough\init\InitQQConfiguration.class
 com\jeramtough\util\PropertiesUtil.class
 com\jeramtough\bean\requestbody\RequestInfo.class
+com\jeramtough\action\component\inspector\UserRegisterInfoInspectorImpl.class
 com\jeramtough\bean\user\PrimaryUser.class
 com\jeramtough\action\component\qqs\QQAccessToken$QQUserPrimaryInformation.class
 com\jeramtough\action\service\register\PhoneUserRegisterService.class

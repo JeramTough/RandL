@@ -1,39 +1,118 @@
 package com.jeramtough.action.service;
 
 import com.jeramtough.action.business.UserPropertiesBusiness;
+import com.jeramtough.action.component.inspector.UserPropertiesInfoInspectorImpl;
 import com.jeramtough.bean.requestbody.PropertiesInfo;
 import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
+import com.jeramtough.dao.mapper.ConfigurationMapper;
 import com.jeramtough.dao.mapper.SelectPrimaryUserMapper;
+import com.jtlog.user.command.P;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.context.WebApplicationContext;
 
 /**
  * Created by 11718
  * on 2017  八月 31 星期四 20:37.
  */
 @Service
-public class UserPropertiesService implements UserPropertiesBusiness
+public class UserPropertiesService extends MyService implements UserPropertiesBusiness
 {
 	private final SelectPrimaryUserMapper selectPrimaryUserMapper;
 	
 	@Autowired
-	public UserPropertiesService(SelectPrimaryUserMapper selectPrimaryUserMapper)
+	public UserPropertiesService(WebApplicationContext applicationContext,
+			ConfigurationMapper configurationMapper,
+			SelectPrimaryUserMapper selectPrimaryUserMapper)
 	{
+		super(applicationContext, configurationMapper);
 		this.selectPrimaryUserMapper = selectPrimaryUserMapper;
 	}
 	
+	
 	@Override
-	public ResponseInfo checkModifiedProperties(PropertiesInfo propertiesInfo)
+	public ResponseInfo checkModifiedProperties(PropertiesInfo propertiesInfo,
+			String rightSmsVerificationCode, String rightEmailVerificationCode,
+			String verifiedPhoneNumber, String verifiedEmailAddress)
 	{
-		if(propertiesInfo.getUserId()==null||selectPrimaryUserMapper.getUserCountByUserId
-				(propertiesInfo.getUserId())==0)
+		UserPropertiesInfoInspectorImpl inspector =
+				new UserPropertiesInfoInspectorImpl(propertiesInfo);
+		
+		//get the same info from database
+		int theSameUsernameCount = selectPrimaryUserMapper
+				.getTheSameValueCountForUsername(propertiesInfo.getUsername());
+		int theSamePhoneNumberCount = selectPrimaryUserMapper
+				.getTheSameValueCountForPhoneNumber(propertiesInfo.getPhoneNumber());
+		int theSameEmailCount = selectPrimaryUserMapper
+				.getTheSameValueCountForEmail(propertiesInfo.getEmail());
+		int theSameUserIdCount =
+				selectPrimaryUserMapper.getUserCountByUserId(propertiesInfo.getUserId());
+		
+		
+		//verify the user id
+		int statusCode = inspector.checkUserId(propertiesInfo.getUserId(), theSameUserIdCount);
+		if (statusCode != 666)
 		{
-			ResponseInfo responseInfo=new ResponseInfo(222);
-			responseInfo.setMessage("userId 未填写或者不存在");
-			return responseInfo;
+			return new ResponseInfo(statusCode, inspector.getMessage());
 		}
 		
+		//get user of current the phone number and the email address
+		String currentUserPhoneNumber =
+				selectPrimaryUserMapper.getPhoneNumberByUserId(propertiesInfo.getUserId());
+		String currentUserEmailAddress =
+				selectPrimaryUserMapper.getEmailAddressByUserId(propertiesInfo.getUserId());
+		
+		//verify the format of information of register
+		statusCode = inspector.checkFormat();
+		if (statusCode != 666)
+		{
+			return new ResponseInfo(statusCode, inspector.getMessage());
+		}
+		
+		///checking the Sms verification code
+		if (propertiesInfo.getPhoneNumber() != null)
+		{
+			statusCode = inspector
+					.checkSmsVerificationCode(rightSmsVerificationCode, verifiedPhoneNumber,
+							currentUserPhoneNumber, propertiesInfo.getPhoneNumber());
+			if (statusCode != 666)
+			{
+				return new ResponseInfo(statusCode, inspector.getMessage());
+			}
+		}
+		
+		//checking the email verification code
+		if (propertiesInfo.getEmail() != null)
+		{
+			statusCode = inspector.checkEmailVerificationCode(rightEmailVerificationCode,
+					verifiedEmailAddress, currentUserEmailAddress, propertiesInfo.getEmail());
+			if (statusCode != 666)
+			{
+				return new ResponseInfo(statusCode, inspector.getMessage());
+			}
+		}
+		
+		//verify whether the information of register are the same
+		if (propertiesInfo.getUsername() == null)
+		{
+			theSameUsernameCount = 0;
+		}
+		if (propertiesInfo.getPhoneNumber() == null)
+		{
+			theSamePhoneNumberCount = 0;
+		}
+		if (propertiesInfo.getEmail() == null)
+		{
+			theSameEmailCount = 0;
+		}
+		statusCode = inspector
+				.checkTheSameRegisterInformation(theSameUsernameCount, theSamePhoneNumberCount,
+						theSameEmailCount);
+		if (statusCode != 666)
+		{
+			return new ResponseInfo(statusCode, inspector.getMessage());
+		}
 		
 		return new OkResponseInfo("修改成功");
 	}

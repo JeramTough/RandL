@@ -11,10 +11,11 @@ import java.util.regex.Pattern;
  * Created by 11718
  * on 2017  八月 31 星期四 22:54.
  */
-public class PrimaryUserRegisterInfoInspector extends RegisterInfoInspector
+public class UserRegisterInfoInspectorImpl extends UserRegisterInfoInspector
 {
 	
-	public PrimaryUserRegisterInfoInspector(RegisterInfo registerInfo)
+	
+	public UserRegisterInfoInspectorImpl(RegisterInfo registerInfo)
 	{
 		super(registerInfo);
 	}

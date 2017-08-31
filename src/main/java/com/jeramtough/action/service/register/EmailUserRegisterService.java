@@ -2,7 +2,7 @@ package com.jeramtough.action.service.register;
 
 import com.jeramtough.action.business.register.EmailUserRegisterBusiness;
 import com.jeramtough.action.component.PrimaryUserFactory;
-import com.jeramtough.action.component.inspector.PrimaryUserRegisterInfoInspector;
+import com.jeramtough.action.component.inspector.UserRegisterInfoInspectorImpl;
 import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
@@ -48,8 +48,8 @@ public class EmailUserRegisterService extends RegisterService
 	public ResponseInfo checkRegisterInfo(RegisterInfo registerInfo,
 			String rightEmailVerificationCode, String verifiedEmailAddress)
 	{
-		PrimaryUserRegisterInfoInspector inspector =
-				new PrimaryUserRegisterInfoInspector(registerInfo);
+		UserRegisterInfoInspectorImpl inspector =
+				new UserRegisterInfoInspectorImpl(registerInfo);
 		
 		
 		int theSameEmailCount =

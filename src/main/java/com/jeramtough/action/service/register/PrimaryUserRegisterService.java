@@ -2,7 +2,7 @@ package com.jeramtough.action.service.register;
 
 import com.jeramtough.action.business.register.PrimaryUserRegisterBusiness;
 import com.jeramtough.action.component.PrimaryUserFactory;
-import com.jeramtough.action.component.inspector.PrimaryUserRegisterInfoInspector;
+import com.jeramtough.action.component.inspector.UserRegisterInfoInspectorImpl;
 import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
@@ -47,8 +47,8 @@ public class PrimaryUserRegisterService extends RegisterService
 			String rightSmsVerificationCode, String rightEmailVerificationCode,
 			String verifiedPhoneNumber, String verifiedEmailAddress)
 	{
-		PrimaryUserRegisterInfoInspector inspector =
-				new PrimaryUserRegisterInfoInspector(registerInfo);
+		UserRegisterInfoInspectorImpl inspector =
+				new UserRegisterInfoInspectorImpl(registerInfo);
 		
 		//get configuration info
 		boolean isCheckSmsVerificationCode = getConfigurationMapper().getNeededSmsValidation();
