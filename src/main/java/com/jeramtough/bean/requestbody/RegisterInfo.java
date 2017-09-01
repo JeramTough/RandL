@@ -1,11 +1,5 @@
 package com.jeramtough.bean.requestbody;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.validator.constraints.Email;
-import org.springframework.validation.annotation.Validated;
-
-import javax.validation.constraints.NotNull;
-
 /**
  * Created by Administrator
  * on 2017  August 10 Thursday 23:38.

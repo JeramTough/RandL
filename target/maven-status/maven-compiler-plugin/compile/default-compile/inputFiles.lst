@@ -6,9 +6,10 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\TextUtil.ja
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\register\QQUserRegisterBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\EmailConfiguration.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\PrimaryUserFactory.java
-D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\RegisterInfoInspector.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\UserPropertiesInfoInspectorImpl.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\register\RegisterService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\MyService.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\UserRegisterInfoInspector.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\XmlUtil.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\record\RecordLoginService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\register\PhoneUserRegisterService.java
@@ -19,6 +20,7 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\r
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\SMSService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\LoginController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\QQService.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\UserRegisterInfoInspectorImpl.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\requestbody\RequestInfo.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\register\RegisterBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\dao\mapper\AliConfigurationMapper.java
@@ -34,6 +36,7 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\SMSBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\UserPropertiesBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\record\RecordService.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\UserInfoInspector.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\OkHttpUtil.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\requestbody\RegisterInfo.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\WordUtil.java
@@ -72,6 +75,5 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\responsebod
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\WriteUserInfoService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\EmailController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\aspect\RegisterAspect.java
-D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\PrimaryUserRegisterInfoInspector.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\dao\mapper\SelectPrimaryUserMapper.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\dao\mapper\ConfigurationMapper.java

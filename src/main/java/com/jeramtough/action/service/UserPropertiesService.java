@@ -7,7 +7,7 @@ import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.dao.mapper.ConfigurationMapper;
 import com.jeramtough.dao.mapper.SelectPrimaryUserMapper;
-import com.jtlog.user.command.P;
+import com.jeramtough.dao.mapper.UpdatePrimaryUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.context.WebApplicationContext;
@@ -20,14 +20,17 @@ import org.springframework.web.context.WebApplicationContext;
 public class UserPropertiesService extends MyService implements UserPropertiesBusiness
 {
 	private final SelectPrimaryUserMapper selectPrimaryUserMapper;
+	private final UpdatePrimaryUserMapper updatePrimaryUserMapper;
 	
 	@Autowired
 	public UserPropertiesService(WebApplicationContext applicationContext,
 			ConfigurationMapper configurationMapper,
-			SelectPrimaryUserMapper selectPrimaryUserMapper)
+			SelectPrimaryUserMapper selectPrimaryUserMapper,
+			UpdatePrimaryUserMapper updatePrimaryUserMapper)
 	{
 		super(applicationContext, configurationMapper);
 		this.selectPrimaryUserMapper = selectPrimaryUserMapper;
+		this.updatePrimaryUserMapper = updatePrimaryUserMapper;
 	}
 	
 	
@@ -120,5 +123,14 @@ public class UserPropertiesService extends MyService implements UserPropertiesBu
 	@Override
 	public void modifyProperties(PropertiesInfo propertiesInfo)
 	{
+		new Thread(() -> {
+			
+			updatePrimaryUserMapper.updatePrimaryUser(Long.parseLong(propertiesInfo.getUserId()),
+					propertiesInfo.getUsername(), propertiesInfo.getNickname(),
+					propertiesInfo.getPassword(), propertiesInfo.getGender(),
+					Integer.parseInt(propertiesInfo.getAge()), propertiesInfo.getPhoneNumber(),
+					propertiesInfo.getEmail(), propertiesInfo.getQqNumber(),
+					propertiesInfo.getSurfaceImageUrl());
+		}).start();
 	}
 }
