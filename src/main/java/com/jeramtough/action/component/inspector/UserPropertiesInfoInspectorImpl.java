@@ -71,8 +71,7 @@ public class UserPropertiesInfoInspectorImpl extends UserRegisterInfoInspectorIm
 	}
 	
 	public int checkEmailVerificationCode(String rightEmailVerificationCode,
-			String verifiedEmailAddress, String
-			currentUserEmailAddress,
+			String verifiedEmailAddress, String currentUserEmailAddress,
 			String inspectedEmailAddress)
 	{
 		if (rightEmailVerificationCode == null)

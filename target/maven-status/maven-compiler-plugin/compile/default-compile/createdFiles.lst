@@ -37,6 +37,7 @@ com\jeramtough\action\business\QQBusiness.class
 com\jeramtough\action\controller\MyController.class
 com\jeramtough\dao\mapper\UpdatePrimaryUserMapper.class
 com\jeramtough\action\component\inspector\UserPropertiesInfoInspectorImpl.class
+com\jeramtough\action\controller\ResetPasswordController.class
 com\jeramtough\dao\mapper\InsertPrimaryUserMapper.class
 com\jeramtough\action\component\PrimaryUserFactory.class
 com\jeramtough\action\controller\LoginController.class
@@ -55,9 +56,11 @@ com\jeramtough\action\business\GetSurfaceImageBusiness.class
 com\jeramtough\action\component\MCage.class
 com\jeramtough\action\component\ali\AliCommunication.class
 com\jeramtough\util\FolderUtil.class
+com\jeramtough\bean\requestbody\ResetPasswordInfo.class
 com\jeramtough\action\business\SMSBusiness.class
 com\jeramtough\action\service\register\EmailUserRegisterService.class
 com\jeramtough\action\aspect\RegisterAspect.class
+com\jeramtough\action\component\inspector\UserResetPasswordInfoInspector.class
 com\jeramtough\dao\db\DatabaseProperty.class
 com\jeramtough\action\service\register\QQUserRegisterService.class
 com\jeramtough\action\controller\PropertyController.class
@@ -72,8 +75,10 @@ com\jeramtough\init\InitQQConfiguration.class
 com\jeramtough\util\PropertiesUtil.class
 com\jeramtough\bean\requestbody\RequestInfo.class
 com\jeramtough\action\component\inspector\UserRegisterInfoInspectorImpl.class
+com\jeramtough\action\service\ResetPasswordService.class
 com\jeramtough\bean\user\PrimaryUser.class
 com\jeramtough\action\component\qqs\QQAccessToken$QQUserPrimaryInformation.class
+com\jeramtough\action\business\ResetPasswordBusiness.class
 com\jeramtough\action\service\register\PhoneUserRegisterService.class
 com\jeramtough\util\JoinPointUtil.class
 com\jeramtough\action\business\record\RecordLoginBusiness.class

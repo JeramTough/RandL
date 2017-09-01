@@ -1,5 +1,6 @@
 package com.jeramtough.dao.mapper;
 
+import com.jeramtough.dao.db.DatabaseProperty;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface UpdatePrimaryUserMapper
 {
-
+	
 	@Update("call randl_db.updatePrimaryUser(#{userId},#{username},#{nickname},#{password}," +
 			"#{gender},#{age},#{phoneNumber},#{email},#{qqNumber},#{surfaceImageUrl});")
 	void updatePrimaryUser(@Param("userId") Long userId, @Param("username") String username,
@@ -24,4 +25,15 @@ public interface UpdatePrimaryUserMapper
 			@Param("qqNumber") String qqNumber,
 			@Param("surfaceImageUrl") String surfaceImageUrl);
 	
+	
+	@Update("UPDATE " + DatabaseProperty.TABLE_NAME_2 + " SET password=#{newPassword} WHERE " +
+			"phone_number=#{phoneNumber}")
+	void updateUserPasswordByPhoneNumber(@Param("newPassword") String newPassword,
+			@Param("phoneNumber") String phoneNumber);
+	
+	
+	@Update("UPDATE " + DatabaseProperty.TABLE_NAME_2 + " SET password=#{newPassword} WHERE " +
+			"email=#{emailAddress}")
+	void updateUserPasswordByEmail(@Param("newPassword") String newPassword,
+			@Param("emailAddress") String emailAddress);
 }
