@@ -72,7 +72,7 @@ public class SMSController
 			{
 				int second = DateTimeUtil
 						.intervalTime(new Date(), new Date(Long.parseLong(canntSendCookie)));
-				responseInfo = new ResponseInfo(100,
+				responseInfo = new ResponseInfo(103,
 						"过于频繁发送短信验证码失败！请在" + (limitingSecond - second) + "秒后重试");
 			}
 		}
@@ -81,7 +81,7 @@ public class SMSController
 			this.saveVerifiedCodeAndPhoneNumberToSession(request, verificationCode,
 					phoneNumber);
 			
-			responseInfo = new OkResponseInfo("测试发送短信验证码成功~：" + verificationCode + "\n五分钟内有效");
+			responseInfo = new OkResponseInfo("测试发送短信验证码成功：" + verificationCode + ",五分钟内有效");
 		}
 		
 		return responseInfo;

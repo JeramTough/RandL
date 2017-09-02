@@ -19,9 +19,11 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\requestbody
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\requestbody\ResetPasswordInfo.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\RegisterController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\register\QQUserRegisterService.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\SurfaceImageController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\SMSService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\UserResetPasswordInfoInspector.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\LoginController.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\SurfaceImageService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\QQService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\inspector\UserRegisterInfoInspectorImpl.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\requestbody\RequestInfo.java
@@ -50,9 +52,7 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\ServletUtil
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\login\LoginBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\bean\user\PrimaryUser.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\register\PrimaryUserRegisterBusiness.java
-D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\GetSurfaceImageController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\JoinPointUtil.java
-D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\GetSurfaceImageBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\component\qqs\QQAccessToken.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\dao\mapper\UpdatePrimaryUserMapper.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\WriteUserInfoBusiness.java
@@ -67,8 +67,8 @@ D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\dao\db\DatabaseP
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\MyController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\util\PropertiesUtil.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\record\RecordRegisterBusiness.java
+D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\business\SurfaceImageBusiness.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\QQController.java
-D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\GetSurfaceImageService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\PropertyController.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\service\EmailService.java
 D:\Developer\codes\IdeaCodes\RandL\src\main\java\com\jeramtough\action\controller\CaptchaController.java

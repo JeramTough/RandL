@@ -2,7 +2,6 @@ com\jeramtough\action\service\WriteUserInfoService.class
 com\jeramtough\action\business\register\EmailUserRegisterBusiness.class
 com\jeramtough\action\service\register\PrimaryUserRegisterService.class
 com\jeramtough\dao\mapper\EmailConfigurationMapper.class
-com\jeramtough\action\controller\GetSurfaceImageController.class
 com\jeramtough\util\WordUtil.class
 com\jeramtough\action\controller\EmailController.class
 com\jeramtough\bean\responsebody\ResponseInfo.class
@@ -20,6 +19,7 @@ com\jeramtough\action\business\login\LoginBusiness.class
 com\jeramtough\action\business\register\PhoneUserRegisterBusiness.class
 com\jeramtough\dao\mapper\SelectPrimaryUserMapper.class
 com\jeramtough\action\business\record\RecordBusiness.class
+com\jeramtough\action\controller\SurfaceImageController.class
 com\jeramtough\action\service\login\LoginService.class
 com\jeramtough\action\service\MyService.class
 com\jeramtough\action\service\record\RecordService.class
@@ -43,8 +43,10 @@ com\jeramtough\action\component\PrimaryUserFactory.class
 com\jeramtough\action\controller\LoginController.class
 com\jeramtough\action\component\inspector\UserRegisterInfoInspector.class
 com\jeramtough\action\component\qqs\QQAccessToken.class
+com\jeramtough\action\service\SurfaceImageService.class
 com\jeramtough\util\OkHttpUtil.class
 com\jeramtough\action\component\inspector\UserInfoInspector.class
+com\jeramtough\action\business\SurfaceImageBusiness.class
 com\jeramtough\dao\mapper\UserActivityMapper.class
 com\jeramtough\action\service\register\RegisterService.class
 com\jeramtough\dao\mapper\AliConfigurationMapper.class
@@ -53,7 +55,6 @@ com\jeramtough\action\service\record\RecordLoginService.class
 com\jeramtough\action\component\ali\AliCommunicationConfig.class
 com\jeramtough\action\business\WriteUserInfoBusiness.class
 com\jeramtough\action\business\EmailBusiness.class
-com\jeramtough\action\business\GetSurfaceImageBusiness.class
 com\jeramtough\action\component\MCage.class
 com\jeramtough\action\component\ali\AliCommunication.class
 com\jeramtough\util\FolderUtil.class
@@ -65,7 +66,6 @@ com\jeramtough\action\component\inspector\UserResetPasswordInfoInspector.class
 com\jeramtough\dao\db\DatabaseProperty.class
 com\jeramtough\action\service\register\QQUserRegisterService.class
 com\jeramtough\action\controller\PropertyController.class
-com\jeramtough\action\service\GetSurfaceImageService.class
 com\jeramtough\action\business\register\RegisterBusiness.class
 com\jeramtough\Application$Constants.class
 com\jeramtough\util\IdUtil.class

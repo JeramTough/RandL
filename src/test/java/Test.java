@@ -1,3 +1,6 @@
+import com.jeramtough.util.IdUtil;
+import com.jtlog.user.command.P;
+
 /**
  * Created by Administrator
  * on 2017  August 11 Friday 21:04.
@@ -7,6 +10,9 @@ public class Test
 	@org.junit.Test
 	public void test1()
 	{
+		String suffix="image/png".split("/")[1].equals("png")?"png":
+				"jpg";
+		P.info(suffix);
 	}
 	
 	@org.junit.Test

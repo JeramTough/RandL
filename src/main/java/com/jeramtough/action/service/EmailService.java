@@ -61,7 +61,7 @@ public class EmailService implements EmailBusiness
 		}
 		catch (Exception e)
 		{
-			responseInfo = new ResponseInfo(101, "发送邮件失败! " + e.getMessage());
+			responseInfo = new ResponseInfo(105, "发送邮件失败! " + e.getMessage());
 		}
 		return responseInfo;
 	}

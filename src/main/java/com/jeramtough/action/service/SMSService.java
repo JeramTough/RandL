@@ -51,7 +51,8 @@ public class SMSService implements SMSBusiness
 			}
 			else
 			{
-				responseInfo = new ResponseInfo(100, "发送短信验证码失败！" +sendSmsResponse.getMessage());
+				responseInfo = new ResponseInfo(104, "发送短信验证码失败！" +sendSmsResponse
+						.getMessage());
 			}
 		}
 		catch (ClientException e)

@@ -146,8 +146,6 @@
             <version>20170516</version>
         </dependency>
 
-
-
         <!-- my printing framework-->
         <dependency>
             <groupId>com.jeramtough</groupId>

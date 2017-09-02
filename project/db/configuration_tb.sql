@@ -30,7 +30,7 @@ INSERT INTO  configuration_tb values(
 'default_surface_image_folder_path','D:/Developer/My codes/Intellij IDEA codes/RandL/surface images/');
 
 INSERT INTO  configuration_tb values(
-'default_surface_image_url','http://localhost:8080/randl/surfaceImage');
+'default_surface_image_url','http://localhost:8666/randl/surfaceImage');
 
 INSERT INTO  configuration_tb values(
 'is_needed_sms_validation','true');
