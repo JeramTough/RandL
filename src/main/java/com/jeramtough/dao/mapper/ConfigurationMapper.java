@@ -30,4 +30,8 @@ public interface ConfigurationMapper
 	@Select("SELECT value FROM "+ DatabaseProperty.TABLE_NAME_1+" WHERE "+
 			"name='is_needed_email_validation'")
 	boolean getNeededEmailValidation();
+	
+	@Select("SELECT value FROM "+ DatabaseProperty.TABLE_NAME_1+" WHERE "+
+			"name='system_port'")
+	int getSystemPort();
 }

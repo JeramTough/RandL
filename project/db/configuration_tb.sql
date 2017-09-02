@@ -38,3 +38,6 @@ INSERT INTO  configuration_tb values(
 INSERT INTO  configuration_tb values(
 'is_needed_email_validation','true');
 
+INSERT INTO  configuration_tb values(
+'system_port','8666');
+

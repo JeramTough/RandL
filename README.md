@@ -22,7 +22,7 @@ MySQL 5.3+
 ##### 1.获取sql脚本文件
 
 ```
-/RandL/project/db/...
+脚本文件位置：  /RandL/project/db/...
 ```
 ##### 2.创建数据库randl_db
 ##### 3.进入ranl_db数据库
@@ -33,7 +33,7 @@ MySQL 5.3+
 
 ##### 1.下载jar
 ```
-/RandL/target/RandL-1.0.jar
+jar文件位置：   /RandL/target/RandL-1.0.jar
 ```
 ##### 2.运行jar
 
@@ -48,5 +48,5 @@ $ java -jar target/RandL-1.0.jar
 # 接口文档：
 
 ```
-/RandL/project/doc/document.doc
+文档位置：   /RandL/project/doc/document.doc
 ```

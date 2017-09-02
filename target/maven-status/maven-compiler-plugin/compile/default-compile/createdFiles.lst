@@ -48,6 +48,7 @@ com\jeramtough\action\component\inspector\UserInfoInspector.class
 com\jeramtough\dao\mapper\UserActivityMapper.class
 com\jeramtough\action\service\register\RegisterService.class
 com\jeramtough\dao\mapper\AliConfigurationMapper.class
+com\jeramtough\init\InitAppConfiguration.class
 com\jeramtough\action\service\record\RecordLoginService.class
 com\jeramtough\action\component\ali\AliCommunicationConfig.class
 com\jeramtough\action\business\WriteUserInfoBusiness.class

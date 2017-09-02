@@ -32,7 +32,7 @@ public class MCage extends com.github.cage.Cage {
 	/**
 	 * Width of CAPTCHA image.
 	 */
-	protected static final int WIDTH = 290;
+	protected static final int WIDTH = 250;
 	
 	/**
 	 * Character set supplied to the {@link RandomTokenGenerator} used by this
