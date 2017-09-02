@@ -25,7 +25,6 @@ public class CaptchaController
 		
 		//save token to session
 		String captchaText = cage.getLowerText();
-		P.info(captchaText);
 		request.getSession().setAttribute(flag, captchaText);
 		
 		//processing captcha image
@@ -46,18 +45,21 @@ public class CaptchaController
 	public ResponseInfo checkCaptcha(@RequestParam("text") String text,
 			HttpServletRequest request)
 	{
-		P.info(text);
-		
 		String captchaText = (String) request.getSession().getAttribute(flag);
 		ResponseInfo responseInfo = new ResponseInfo();
-		if (captchaText.equals(text))
+		if (captchaText==null)
+		{
+			responseInfo.setStatusCode(101);
+			responseInfo.setMessage("图片验证码以失效，请刷新验证码图片");
+		}
+		else if (captchaText.equals(text))
 		{
 			responseInfo.setStatusCode(666);
 			responseInfo.setMessage("图片验证码正确");
 		}
 		else
 		{
-			responseInfo.setStatusCode(0);
+			responseInfo.setStatusCode(102);
 			responseInfo.setMessage("图片验证码错误");
 		}
 		return responseInfo;
