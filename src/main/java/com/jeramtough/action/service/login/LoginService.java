@@ -40,7 +40,7 @@ public class LoginService implements LoginBusiness
 		}
 		else
 		{
-			ResponseInfo responseInfo=new ResponseInfo();
+			ResponseInfo responseInfo=new ResponseInfo(301);
 			responseInfo.setMessage("登录信息有误或者用户不存在");
 			return responseInfo;
 		}
