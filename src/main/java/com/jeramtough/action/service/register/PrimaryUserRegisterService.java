@@ -94,6 +94,15 @@ public class PrimaryUserRegisterService extends RegisterService
 			}
 		}
 		
+		//check is needed username
+		if(isCheckEmailVerificationCode==false&&isCheckSmsVerificationCode==false)
+		{
+			if (registerInfo.getUsername()==null)
+			{
+				return new ResponseInfo(221,"用户名未填写");
+			}
+		}
+		
 		//verify whether the information of register are the same
 		statusCode = inspector
 				.checkTheSameRegisterInformation(theSameUsernameCount, theSamePhoneNumberCount,

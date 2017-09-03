@@ -131,6 +131,12 @@ public class UserRegisterInfoInspectorImpl extends UserRegisterInfoInspector
 			return 210;
 		}
 		
+		if(getRegisterInfo().getPhoneNumber()==null)
+		{
+			setMessage("手机号码未填写！");
+			return 217;
+		}
+		
 		if (getRegisterInfo().getPhoneNumber().equals(verifiedPhoneNumber) == false)
 		{
 			setMessage("注册的电话号码与验证的号码不是同一个！");
@@ -161,6 +167,12 @@ public class UserRegisterInfoInspectorImpl extends UserRegisterInfoInspector
 		{
 			setMessage("邮箱验证码填写不正确！");
 			return 216;
+		}
+		
+		if(getRegisterInfo().getPhoneNumber()==null)
+		{
+			setMessage("邮箱地址并未填写！");
+			return 218;
 		}
 		
 		if (getRegisterInfo().getEmail().equals(verifiedEmailAddress) == false)
