@@ -26,7 +26,7 @@ public class UserPropertiesInfoInspectorImpl extends UserRegisterInfoInspectorIm
 		if (userId == null || theSameUserIdCount == 0)
 		{
 			setMessage("userId 未填写或者不存在");
-			return 222;
+			return 401;
 		}
 		return 666;
 	}
@@ -58,13 +58,13 @@ public class UserPropertiesInfoInspectorImpl extends UserRegisterInfoInspectorIm
 		if (currentUserPhoneNumber.equals(inspectedPhoneNumber))
 		{
 			setMessage("即将修改的手机号码与当前用户注册的手机号码相同");
-			return 223;
+			return 402;
 		}
 		
 		if (verifiedPhoneNumber.equals(currentUserPhoneNumber) == false)
 		{
 			setMessage("发送验证码的手机号码不是当前用户注册的手机号码");
-			return 224;
+			return 403;
 		}
 		
 		return 666;
@@ -97,13 +97,13 @@ public class UserPropertiesInfoInspectorImpl extends UserRegisterInfoInspectorIm
 		if (currentUserEmailAddress.equals(inspectedEmailAddress))
 		{
 			setMessage("即将修改的邮箱地址与当前用户注册的邮箱地址相同");
-			return 225;
+			return 404;
 		}
 		
 		if (verifiedEmailAddress.equals(currentUserEmailAddress) == false)
 		{
 			setMessage("发送验证码的邮箱地址不是当前用户注册的邮箱地址");
-			return 226;
+			return 405;
 		}
 		return 666;
 	}

@@ -32,7 +32,7 @@ public class UserResetPasswordInfoInspector implements UserInfoInspector
 		if (rightSmsVerificationCode == null && rightEmailVerificationCode == null)
 		{
 			setMessage("未发送过短信验证码或者邮箱验证码");
-			return 230;
+			return 504;
 		}
 		return 666;
 	}
@@ -43,7 +43,7 @@ public class UserResetPasswordInfoInspector implements UserInfoInspector
 		if (resetPasswordInfo.getNewPassword() == null)
 		{
 			setMessage("新密码未填写");
-			return 229;
+			return 503;
 		}
 		return 666;
 	}
@@ -53,7 +53,7 @@ public class UserResetPasswordInfoInspector implements UserInfoInspector
 		if (theSamePhoneNumberCount == 0)
 		{
 			message = "改手机号码未注册过";
-			return 227;
+			return 501;
 		}
 		
 		return 666;
@@ -64,7 +64,7 @@ public class UserResetPasswordInfoInspector implements UserInfoInspector
 		if (theSameEmailAddressCount == 0)
 		{
 			message = "改邮箱地址未注册过";
-			return 228;
+			return 502;
 		}
 		return 666;
 	}
