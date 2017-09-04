@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cb7f879-dde5-45a3-91ff-5490f7f3926c" name="Default" comment="Merge branch 'master' of https://github.com/JeramTough/RandL.git&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/issue.txt">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/doc/response-info.txt" afterPath="$PROJECT_DIR$/project/doc/response-info.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserPropertiesInfoInspectorImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserPropertiesInfoInspectorImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserResetPasswordInfoInspector.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserResetPasswordInfoInspector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,28 +17,38 @@
       <file leaf-file-name="response-info.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project/doc/response-info.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="115" column="3" lean-forward="false" selection-start-line="115" selection-start-column="3" selection-end-line="115" selection-end-column="3" />
+            <state relative-caret-position="343">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="116" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/RegisterController.java">
+      <file leaf-file-name="ResetPasswordService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/service/ResetPasswordService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1314">
-              <caret line="92" column="12" lean-forward="false" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
+            <state relative-caret-position="264">
+              <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserResetPasswordInfoInspector.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserResetPasswordInfoInspector.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserResetPasswordInfoInspector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+            <state relative-caret-position="161">
+              <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaptchaController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -61,7 +69,12 @@
     <findStrings>
       <find>UserRegisterInfoInspector</find>
       <find>新密码</find>
+      <find>230</find>
+      <find>未发送过短信验证码或者邮箱验证</find>
     </findStrings>
+    <replaceStrings>
+      <replace>230</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,7 +119,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/init/InitAppConfiguration.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/dao/mapper/ConfigurationMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/MCage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/service/SMSService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/SMSController.java" />
@@ -125,6 +137,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserPropertiesInfoInspectorImpl.java" />
         <option value="$PROJECT_DIR$/project/doc/response-info.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserResetPasswordInfoInspector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java" />
       </list>
     </option>
   </component>
@@ -261,28 +274,17 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="jeramtough" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeramtough" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="inspector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandL" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="jeramtough" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jeramtough" type="462c0819:PsiDirectoryNode" />
+              <item name="action" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RandL" type="b2602c69:ProjectViewProjectNode" />
@@ -500,7 +502,7 @@
       <workItem from="1504159381940" duration="34399000" />
       <workItem from="1504236408185" duration="44744000" />
       <workItem from="1504418404364" duration="7403000" />
-      <workItem from="1504429054473" duration="7637000" />
+      <workItem from="1504429054473" duration="8929000" />
     </task>
     <servers />
   </component>
@@ -531,7 +533,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96599000" />
+    <option name="totallyTimeSpent" value="97891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -698,13 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="62" column="44" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -954,14 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/service/ResetPasswordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserPropertiesInfoInspectorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -972,7 +959,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/RegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1314">
+        <state relative-caret-position="-1125">
           <caret line="92" column="12" lean-forward="false" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
           <folding />
         </state>
@@ -980,16 +967,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/project/doc/response-info.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="115" column="3" lean-forward="false" selection-start-line="115" selection-start-column="3" selection-end-line="115" selection-end-column="3" />
+        <state relative-caret-position="343">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="116" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/service/ResetPasswordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="34" column="24" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/component/inspector/UserResetPasswordInfoInspector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+        <state relative-caret-position="161">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/CaptchaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
           <folding />
         </state>
       </provider>
