@@ -35,8 +35,6 @@ public class InitQQConfiguration implements ApplicationListener<ContextRefreshed
 				.getResource("classpath:qqconnectconfig.properties");
 		try
 		{
-			String path = resource.getURI().getPath();
-			
 			InputStream inputStream = resource.getInputStream();
 			properties.load(inputStream);
 			
