@@ -30,7 +30,6 @@ public class InitQQConfiguration implements ApplicationListener<ContextRefreshed
 	@Override
 	public void onApplicationEvent(ContextRefreshedEvent event)
 	{
-		Properties properties = new Properties();
 		Resource resource = event.getApplicationContext()
 				.getResource("classpath:qqconnectconfig.properties");
 		try
