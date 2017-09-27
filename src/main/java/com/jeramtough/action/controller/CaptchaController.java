@@ -50,7 +50,7 @@ public class CaptchaController
 		if (captchaText==null)
 		{
 			responseInfo.setStatusCode(101);
-			responseInfo.setMessage("图片验证码已失效，请刷新验证码图片");
+			responseInfo.setMessage("图片验证码已vvvvvvvvvvvvvvvvvv失效，请刷新验证码图片");
 		}
 		else if (captchaText.equals(text))
 		{

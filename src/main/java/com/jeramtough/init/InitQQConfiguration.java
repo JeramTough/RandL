@@ -2,6 +2,7 @@ package com.jeramtough.init;
 
 import com.jeramtough.dao.mapper.QQConfigurationMapper;
 import com.jtlog.user.command.P;
+import com.qq.connect.utils.QQConnectConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -39,12 +40,16 @@ public class InitQQConfiguration implements ApplicationListener<ContextRefreshed
 			InputStream inputStream = resource.getInputStream();
 			properties.load(inputStream);
 			
-			properties.setProperty("app_ID", qqConfigurationMapper.getAppId());
+			QQConnectConfig.updateProperties("app_ID", qqConfigurationMapper.getAppId());
+			QQConnectConfig.updateProperties("app_KEY",qqConfigurationMapper.getAppKey());
+			QQConnectConfig.updateProperties("redirect_URI",qqConfigurationMapper.getRedirectUri());
+			
+			/*properties.setProperty("app_ID", qqConfigurationMapper.getAppId());
 			properties.setProperty("app_KEY",qqConfigurationMapper.getAppKey());
 			properties.setProperty("redirect_URI",qqConfigurationMapper.getRedirectUri());
 			
 			OutputStream outputStream=new FileOutputStream(new File(path));
-			properties.store(outputStream,"");
+			properties.store(outputStream,"");*/
 			
 			inputStream.close();
 		}

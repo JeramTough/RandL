@@ -11,6 +11,8 @@
     <properties>
         <java.version>1.8</java.version>
         <main.basedir>${basedir}/../..</main.basedir>
+        <!-- The main class to start by executing java -jar -->
+        <start-class>com.jeramtough.Application</start-class>
     </properties>
 
     <parent>
@@ -164,5 +166,6 @@
             </plugin>
         </plugins>
     </build>
+
 
 </project>
