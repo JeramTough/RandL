@@ -1,7 +1,7 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
-import com.jeramtough.action.business.ResetPasswordBusiness;
+import com.jeramtough.business.ResetPasswordBusiness;
 import com.jeramtough.bean.requestbody.RequestInfo;
 import com.jeramtough.bean.requestbody.ResetPasswordInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;

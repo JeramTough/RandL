@@ -1,5 +1,3 @@
-import com.jeramtough.util.IdUtil;
-import com.jtlog.user.command.P;
 
 /**
  * Created by Administrator
@@ -12,7 +10,6 @@ public class Test
 	{
 		String suffix="image/png".split("/")[1].equals("png")?"png":
 				"jpg";
-		P.info(suffix);
 	}
 	
 	@org.junit.Test

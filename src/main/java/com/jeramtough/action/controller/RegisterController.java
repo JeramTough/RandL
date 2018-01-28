@@ -1,17 +1,17 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
-import com.jeramtough.action.business.QQBusiness;
-import com.jeramtough.action.business.register.EmailUserRegisterBusiness;
-import com.jeramtough.action.business.register.PhoneUserRegisterBusiness;
-import com.jeramtough.action.business.register.PrimaryUserRegisterBusiness;
-import com.jeramtough.action.business.register.QQUserRegisterBusiness;
-import com.jeramtough.action.component.qqs.QQAccessToken;
+import com.jeramtough.business.QQBusiness;
+import com.jeramtough.business.register.EmailUserRegisterBusiness;
+import com.jeramtough.business.register.PhoneUserRegisterBusiness;
+import com.jeramtough.business.register.PrimaryUserRegisterBusiness;
+import com.jeramtough.business.register.QQUserRegisterBusiness;
+import com.jeramtough.component.qqs.QQAccessToken;
 import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.bean.user.PrimaryUser;
-import com.jtlog.user.command.P;
+import com.jeramtough.jtlog3.P;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.WebApplicationContext;
@@ -62,7 +62,6 @@ public class RegisterController
 			PrimaryUser primaryUser =
 					primaryUserRegisterBusiness.createUserWithRegisterInfo(registerInfo);
 			
-			P.info(primaryUser.toString());
 			responseInfo =
 					primaryUserRegisterBusiness.savePrimaryUserToPersistentLayer(primaryUser);
 		}
@@ -85,7 +84,6 @@ public class RegisterController
 		{
 			PrimaryUser primaryUser = qqUserRegisterBusiness.createUserForQQUser(userOpenId,
 					qqAccessToken.getQQUserPrimaryInformation());
-			P.info(primaryUser.toString());
 			
 			//save the user id so that record register activities
 			request.setAttribute(Application.Constants.NEW_QQ_USER_ID_KEY,
@@ -128,7 +126,6 @@ public class RegisterController
 					.createUserWithPhoneNumber(requestInfo.getMessage().getPhoneNumber(),
 							requestInfo.getMessage().getPassword());
 			
-			P.info(primaryUser.toString());
 			responseInfo =
 					phoneUserRegisterBusiness.savePrimaryUserToPersistentLayer(primaryUser);
 		}
@@ -157,7 +154,6 @@ public class RegisterController
 					.createUserWithEmail(requestInfo.getMessage().getEmail(),
 							requestInfo.getMessage().getPassword());
 			
-			P.info(primaryUser.toString());
 			responseInfo =
 					emailUserRegisterBusiness.savePrimaryUserToPersistentLayer(primaryUser);
 		}

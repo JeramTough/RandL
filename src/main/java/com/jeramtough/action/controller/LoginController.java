@@ -1,6 +1,6 @@
 package com.jeramtough.action.controller;
 
-import com.jeramtough.action.business.login.LoginBusiness;
+import com.jeramtough.business.login.LoginBusiness;
 import com.jeramtough.bean.requestbody.LoginInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;

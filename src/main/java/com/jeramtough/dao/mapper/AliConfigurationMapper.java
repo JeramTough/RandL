@@ -1,6 +1,6 @@
 package com.jeramtough.dao.mapper;
 
-import com.jeramtough.action.component.ali.AliCommunicationConfig;
+import com.jeramtough.component.ali.AliCommunicationConfig;
 import com.jeramtough.dao.db.DatabaseProperty;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;

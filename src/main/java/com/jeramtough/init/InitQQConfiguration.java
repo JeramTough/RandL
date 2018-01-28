@@ -1,16 +1,11 @@
 package com.jeramtough.init;
 
 import com.jeramtough.dao.mapper.QQConfigurationMapper;
-import com.jtlog.user.command.P;
 import com.qq.connect.utils.QQConnectConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
-import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
-
-import java.io.*;
-import java.util.Properties;
 
 /**
  * Created by Administrator

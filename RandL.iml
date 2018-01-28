@@ -70,6 +70,6 @@
     <orderEntry type="library" name="Maven: com.squareup.okhttp3:okhttp:3.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.11.0" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20170516" level="project" />
-    <orderEntry type="library" name="Maven: com.jeramtough:jtlogger:1.0" level="project" />
+    <orderEntry type="library" name="Maven: com.jeramtough:jtLog3:1.0" level="project" />
   </component>
 </module>

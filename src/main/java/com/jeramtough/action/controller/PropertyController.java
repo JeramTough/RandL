@@ -1,7 +1,7 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
-import com.jeramtough.action.business.UserPropertiesBusiness;
+import com.jeramtough.business.UserPropertiesBusiness;
 import com.jeramtough.bean.requestbody.PropertiesInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;

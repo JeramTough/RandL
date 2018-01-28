@@ -1,6 +1,6 @@
 package com.jeramtough.action.controller;
 
-import com.jeramtough.action.business.SurfaceImageBusiness;
+import com.jeramtough.business.SurfaceImageBusiness;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

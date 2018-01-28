@@ -1,6 +1,5 @@
 package com.jeramtough.util;
 
-import com.jtlog.user.command.P;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 
@@ -32,7 +31,7 @@ public class OkHttpUtil
 		}
 		catch (IOException e)
 		{
-			P.error(e.getMessage());
+			e.printStackTrace();
 		}
 		return null;
 	}

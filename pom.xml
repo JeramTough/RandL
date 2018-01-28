@@ -151,7 +151,7 @@
         <!-- my printing framework-->
         <dependency>
             <groupId>com.jeramtough</groupId>
-            <artifactId>jtlogger</artifactId>
+            <artifactId>jtLog3</artifactId>
             <version>1.0</version>
         </dependency>
 

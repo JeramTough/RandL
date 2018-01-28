@@ -1,7 +1,7 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
-import com.jeramtough.action.business.EmailBusiness;
+import com.jeramtough.business.EmailBusiness;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;

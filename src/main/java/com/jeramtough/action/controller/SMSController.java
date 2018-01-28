@@ -1,7 +1,7 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
-import com.jeramtough.action.business.SMSBusiness;
+import com.jeramtough.business.SMSBusiness;
 import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.dao.mapper.AliConfigurationMapper;

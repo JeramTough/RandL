@@ -1,7 +1,7 @@
 package com.jeramtough.action.aspect;
 
 import com.jeramtough.Application;
-import com.jeramtough.action.business.record.RecordRegisterBusiness;
+import com.jeramtough.business.record.RecordRegisterBusiness;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.util.JoinPointUtil;
 import com.jeramtough.util.ServletUtil;

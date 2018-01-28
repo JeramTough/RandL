@@ -1,6 +1,6 @@
 package com.jeramtough.action.aspect;
 
-import com.jeramtough.action.business.record.RecordLoginBusiness;
+import com.jeramtough.business.record.RecordLoginBusiness;
 import com.jeramtough.bean.responsebody.ResponseInfo;
 import com.jeramtough.bean.user.PrimaryUser;
 import com.jeramtough.util.JoinPointUtil;
