@@ -6,6 +6,8 @@ import com.jeramtough.business.register.EmailUserRegisterBusiness;
 import com.jeramtough.business.register.PhoneUserRegisterBusiness;
 import com.jeramtough.business.register.PrimaryUserRegisterBusiness;
 import com.jeramtough.business.register.QQUserRegisterBusiness;
+import com.jeramtough.component.jtsession.JtSession;
+import com.jeramtough.component.jtsession.JtSessionManager;
 import com.jeramtough.component.qqs.QQAccessToken;
 import com.jeramtough.bean.requestbody.RegisterInfo;
 import com.jeramtough.bean.requestbody.RequestInfo;
@@ -109,11 +111,28 @@ public class RegisterController
 	public ResponseInfo registerNewPhoneUser(
 			@RequestBody RequestInfo<RegisterInfo> requestInfo, HttpServletRequest request,
 			@SessionAttribute(value = Application.Constants.SMS_VERIFICATION_CODE_KEY, required = false) String rightSmsVerificationCode,
-			@SessionAttribute(value = Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY, required = false) String verifiedPhoneNumber)
+			@SessionAttribute(value = Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY, required = false) String verifiedPhoneNumber,
+			@RequestParam(value = "sessionId", required = false) String sessionId)
 	{
 		PhoneUserRegisterBusiness phoneUserRegisterBusiness =
 				(PhoneUserRegisterBusiness) applicationContext
 						.getBean("phoneUserRegisterService");
+		
+		if (sessionId != null)
+		{
+			JtSession jtSession =
+					JtSessionManager.getJtSessionManager().getJtSession(sessionId);
+			if (jtSession != null)
+			{
+				rightSmsVerificationCode = (String) jtSession.getValues()
+						.get(Application.Constants.SMS_VERIFICATION_CODE_KEY);
+				verifiedPhoneNumber = (String) jtSession.getValues()
+						.get(Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY);
+			}
+			else
+			{
+			}
+		}
 		
 		ResponseInfo responseInfo;
 		

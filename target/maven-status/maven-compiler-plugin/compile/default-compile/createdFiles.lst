@@ -11,6 +11,7 @@ com\jeramtough\bean\requestbody\PropertiesInfo.class
 com\jeramtough\business\SurfaceImageBusiness.class
 com\jeramtough\action\controller\QQController.class
 com\jeramtough\Application.class
+com\jeramtough\component\jtsession\JtSessionManager.class
 com\jeramtough\component\ali\AliCommunicationConfig.class
 com\jeramtough\dao\mapper\SelectPrimaryUserMapper.class
 com\jeramtough\action\controller\SurfaceImageController.class
@@ -68,6 +69,8 @@ com\jeramtough\component\qqs\QQAccessToken$QQUserPrimaryInformation.class
 com\jeramtough\service\EmailService.class
 com\jeramtough\business\register\RegisterBusiness.class
 com\jeramtough\business\SMSBusiness.class
+com\jeramtough\component\jtsession\JtSession.class
+com\jeramtough\component\jtsession\JtSessionLiveListener.class
 com\jeramtough\util\TextUtil.class
 com\jeramtough\util\XmlUtil.class
 com\jeramtough\init\InitQQConfiguration.class

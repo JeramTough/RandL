@@ -4,7 +4,10 @@ import com.jeramtough.Application;
 import com.jeramtough.business.SMSBusiness;
 import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
+import com.jeramtough.component.jtsession.JtSession;
+import com.jeramtough.component.jtsession.JtSessionManager;
 import com.jeramtough.dao.mapper.AliConfigurationMapper;
+import com.jeramtough.jtlog3.P;
 import com.jeramtough.util.DateTimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -40,6 +43,7 @@ public class SMSController
 	public ResponseInfo sendVerificationCodeToPhone(
 			@RequestParam("phoneNumber") String phoneNumber,
 			@RequestParam(value = "isTest", required = false, defaultValue = "false") boolean isTest,
+			@RequestParam(value = "sessionId", required = false) String sessionId,
 			@CookieValue(value = "canntSendCookie", required = false) String canntSendCookie,
 			HttpServletResponse response, HttpServletRequest request)
 	{
@@ -65,7 +69,7 @@ public class SMSController
 					response.addCookie(cookie);
 					
 					this.saveVerifiedCodeAndPhoneNumberToSession(request, verificationCode,
-							phoneNumber);
+							phoneNumber, sessionId);
 				}
 			}
 			else
@@ -79,7 +83,7 @@ public class SMSController
 		else
 		{
 			this.saveVerifiedCodeAndPhoneNumberToSession(request, verificationCode,
-					phoneNumber);
+					phoneNumber, sessionId);
 			
 			responseInfo = new OkResponseInfo("测试发送短信验证码成功：" + verificationCode + ",五分钟内有效");
 		}
@@ -89,15 +93,34 @@ public class SMSController
 	
 	//**********************************************
 	private void saveVerifiedCodeAndPhoneNumberToSession(HttpServletRequest request,
-			String verificationCode, String phoneNumber)
+			String verificationCode, String phoneNumber, String sessionId)
 	{
-		//save the verification code to session
-		HttpSession session = request.getSession();
-		session.setMaxInactiveInterval(60 * 5);
-		session.setAttribute(Application.Constants.SMS_VERIFICATION_CODE_KEY,
-				verificationCode);
-		session.setAttribute(Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY,
-				phoneNumber);
-		
+		if (sessionId != null)
+		{
+			JtSession jtSession =
+					JtSessionManager.getJtSessionManager().getJtSession(sessionId);
+			if (jtSession == null)
+			{
+				jtSession = new JtSession(sessionId);
+				JtSessionManager.getJtSessionManager().addJtSession(jtSession);
+			}
+			
+			jtSession.getValues()
+					.put(Application.Constants.SMS_VERIFICATION_CODE_KEY, verificationCode);
+			jtSession.getValues()
+					.put(Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY,
+							phoneNumber);
+		}
+		else
+		{
+			//save the verification code to session
+			HttpSession session = request.getSession();
+			P.debug(session.hashCode());
+			session.setMaxInactiveInterval(60 * 5);
+			session.setAttribute(Application.Constants.SMS_VERIFICATION_CODE_KEY,
+					verificationCode);
+			session.setAttribute(Application.Constants.SMS_VERIFICATION_FOR_PHONE_NUMBER_KEY,
+					phoneNumber);
+		}
 	}
 }
