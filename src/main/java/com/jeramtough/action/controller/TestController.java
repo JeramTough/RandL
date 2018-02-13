@@ -1,6 +1,8 @@
 package com.jeramtough.action.controller;
 
+import com.jeramtough.dao.mapper.UserActivityMapper;
 import com.jeramtough.jtlog3.P;
+import com.jeramtough.util.DateTimeUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -26,6 +28,10 @@ public class TestController extends MyController
 	public String generateCaptcha(HttpServletRequest request, HttpServletResponse response)
 	{
 		System.out.println("中文是否乱码");
+		UserActivityMapper userActivityMapper =
+				(UserActivityMapper) getApplicationContext().getBean("userActivityMapper");
+		userActivityMapper.updateUserLoginActivity("1","192", DateTimeUtil
+				.getCurrentDateTime(),"中文");
 		return "中文是否乱码";
 	}
 }
