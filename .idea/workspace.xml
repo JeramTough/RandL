@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5cb7f879-dde5-45a3-91ff-5490f7f3926c" name="Default" comment="Merge branch 'master' of https://github.com/JeramTough/RandL.git&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/issue.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/TestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/TestController.java" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-    </list>
+    <list default="true" id="5cb7f879-dde5-45a3-91ff-5490f7f3926c" name="Default" comment="Merge branch 'master' of https://github.com/JeramTough/RandL.git&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/issue.txt" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -581,7 +576,7 @@
       <workItem from="1518071612541" duration="598000" />
       <workItem from="1518353765954" duration="599000" />
       <workItem from="1518357675471" duration="800000" />
-      <workItem from="1518497927425" duration="5227000" />
+      <workItem from="1518497927425" duration="5746000" />
     </task>
     <servers />
   </component>
@@ -612,10 +607,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133809000" />
+    <option name="totallyTimeSpent" value="134328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
