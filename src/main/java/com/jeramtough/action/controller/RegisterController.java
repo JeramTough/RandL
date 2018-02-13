@@ -145,6 +145,8 @@ public class RegisterController
 					.createUserWithPhoneNumber(requestInfo.getMessage().getPhoneNumber(),
 							requestInfo.getMessage().getPassword());
 			
+			P.debug(primaryUser.toString());
+			
 			responseInfo =
 					phoneUserRegisterBusiness.savePrimaryUserToPersistentLayer(primaryUser);
 		}

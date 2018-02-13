@@ -46,6 +46,7 @@ com\jeramtough\service\UserPropertiesService.class
 com\jeramtough\component\MCage.class
 com\jeramtough\dao\mapper\AliConfigurationMapper.class
 com\jeramtough\init\InitAppConfiguration.class
+com\jeramtough\action\controller\TestController.class
 com\jeramtough\component\PrimaryUserFactory.class
 com\jeramtough\component\ali\AliCommunication.class
 com\jeramtough\service\register\QQUserRegisterService.class
