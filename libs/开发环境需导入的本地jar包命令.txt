@@ -1,3 +1,5 @@
+#开发环境需导入的本地jar包命令，自行修改路径值
+
 mvn install:install-file -Dfile=E:\Codes\IdeaCodes\RandL\libs\aliyun-java-sdk-core-3.2.3.jar -DgroupId=com.aliyun -DartifactId=aliyunsdkcore -Dversion=3.2.3 -Dpackaging=jar
 
 mvn install:install-file -Dfile=E:\Codes\IdeaCodes\RandL\libs\aliyun-java-sdk-dysmsapi-1.0.jar -DgroupId=com.aliyun -DartifactId=aliyundysmsapi -Dversion=1.0 -Dpackaging=jar
