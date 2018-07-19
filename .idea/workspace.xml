@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cb7f879-dde5-45a3-91ff-5490f7f3926c" name="Default" comment="Merge branch 'master' of https://github.com/JeramTough/RandL.git&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml&#10;#&#9;.idea/workspace.xml&#10;#&#9;project/issue.txt">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/新建文本文档.txt" beforeDir="false" afterPath="$PROJECT_DIR$/libs/开发环境需导入的本地jar包命令.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/images/a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/images/b.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/images/c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/images/d.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/issue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project/issue.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,12 +15,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="-139" />
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -62,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/bean/requestbody/PropertiesInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/business/UserPropertiesBusiness.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/PropertyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/dao/mapper/SelectPrimaryUserMapper.java" />
@@ -113,6 +116,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/jeramtough/action/controller/TestController.java" />
         <option value="$PROJECT_DIR$/project/issue.txt" />
         <option value="$PROJECT_DIR$/libs/开发环境需导入的本地jar包命令.txt" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -227,13 +231,14 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jeramtough.action.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Codes\IdeaCodes\RandL\project" />
       <recent name="E:\Codes\IdeaCodes\RandL\libs" />
       <recent name="D:\Developer\codes\IdeaCodes\RandL\project" />
       <recent name="D:\Developer\codes\IdeaCodes\RandL\project\images" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.jeramtough.action.service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -387,7 +392,7 @@
       <workItem from="1518497927425" duration="5746000" />
       <workItem from="1518791421421" duration="704000" />
       <workItem from="1518923843924" duration="598000" />
-      <workItem from="1532004116085" duration="1299000" />
+      <workItem from="1532004116085" duration="1653000" />
     </task>
     <servers />
   </component>
@@ -418,10 +423,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136929000" />
+    <option name="totallyTimeSpent" value="137283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -432,7 +438,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.16187595" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32993197" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25976232" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25976232" />
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32088286" />
       <window_info id="Capture Tool" order="2" />
@@ -440,6 +446,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31316188" />
       <window_info anchor="right" id="Bean Validation" order="3" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3293718" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -450,7 +457,6 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.24829932" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
@@ -502,13 +508,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/component/inspector/UserPropertiesInfoInspectorImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/jeramtough/component/inspector/UserResetPasswordInfoInspector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -819,14 +818,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="-139" />
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project/a">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
