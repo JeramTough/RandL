@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AliCommunicationConfig
 {
-	private int limitingSecond = 120;
+	private int limitingSecond = 60;
 	//产品名称:云通信短信API产品,开发者无需替换
 	private final String product = "Dysmsapi";
 	//产品域名,开发者无需替换

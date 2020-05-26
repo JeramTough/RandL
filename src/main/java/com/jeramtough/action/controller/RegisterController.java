@@ -1,6 +1,10 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
+import com.jeramtough.bean.requestbody.RegisterInfo;
+import com.jeramtough.bean.requestbody.RequestInfo;
+import com.jeramtough.bean.responsebody.ResponseInfo;
+import com.jeramtough.bean.user.PrimaryUser;
 import com.jeramtough.business.QQBusiness;
 import com.jeramtough.business.register.EmailUserRegisterBusiness;
 import com.jeramtough.business.register.PhoneUserRegisterBusiness;
@@ -9,11 +13,6 @@ import com.jeramtough.business.register.QQUserRegisterBusiness;
 import com.jeramtough.component.jtsession.JtSession;
 import com.jeramtough.component.jtsession.JtSessionManager;
 import com.jeramtough.component.qqs.QQAccessToken;
-import com.jeramtough.bean.requestbody.RegisterInfo;
-import com.jeramtough.bean.requestbody.RequestInfo;
-import com.jeramtough.bean.responsebody.ResponseInfo;
-import com.jeramtough.bean.user.PrimaryUser;
-import com.jeramtough.jtlog3.P;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.WebApplicationContext;
@@ -145,8 +144,7 @@ public class RegisterController
 					.createUserWithPhoneNumber(requestInfo.getMessage().getPhoneNumber(),
 							requestInfo.getMessage().getPassword());
 			
-			P.debug(primaryUser.toString());
-			
+
 			responseInfo =
 					phoneUserRegisterBusiness.savePrimaryUserToPersistentLayer(primaryUser);
 		}

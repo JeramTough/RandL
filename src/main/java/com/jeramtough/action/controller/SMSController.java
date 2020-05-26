@@ -1,13 +1,12 @@
 package com.jeramtough.action.controller;
 
 import com.jeramtough.Application;
-import com.jeramtough.business.SMSBusiness;
 import com.jeramtough.bean.responsebody.OkResponseInfo;
 import com.jeramtough.bean.responsebody.ResponseInfo;
+import com.jeramtough.business.SMSBusiness;
 import com.jeramtough.component.jtsession.JtSession;
 import com.jeramtough.component.jtsession.JtSessionManager;
 import com.jeramtough.dao.mapper.AliConfigurationMapper;
-import com.jeramtough.jtlog3.P;
 import com.jeramtough.util.DateTimeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -115,7 +114,6 @@ public class SMSController
 		{
 			//save the verification code to session
 			HttpSession session = request.getSession();
-			P.debug(session.hashCode());
 			session.setMaxInactiveInterval(60 * 5);
 			session.setAttribute(Application.Constants.SMS_VERIFICATION_CODE_KEY,
 					verificationCode);
