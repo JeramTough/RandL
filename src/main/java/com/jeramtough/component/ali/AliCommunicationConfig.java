@@ -16,8 +16,8 @@ public class AliCommunicationConfig
 	private final String domain = "dysmsapi.aliyuncs.com";
 	
 	// TODO 此处需要替换成开发者自己的AK(在阿里云访问控制台寻找)
-	private String accessKeyId = "LTAInCwSExXo2Ib9";
-	private String accessKeySecret = "IsujhXenc0Y8tfdEzeNdzOJEpH15SU";
+	private String accessKeyId = "***";
+	private String accessKeySecret = "****";
 	
 	//必填:短信签名-可在短信控制台中找到
 	private String signature = "每投网";
